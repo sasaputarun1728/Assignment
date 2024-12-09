@@ -1,0 +1,129 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  object-position: center; /* Ensure the image is centered */
+  border-radius: 10px;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.card-date {
+  position: absolute;
+  top: 10px;
+  left: -5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #051d3d;
+  padding: 5px 10px;
+  border-radius: 0px 15px 15px 0;
+  z-index: 2;
+}
+
+.card-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: left;
+  margin-top: 30px;
+  line-height: 1.4;
+  z-index: 1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  max-width: 90%;
+}
+
+.span-row-2 {
+  grid-row: span 2;
+}
+
+.span-row-1 {
+  grid-row: span 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr); /* Adjust to 3 columns for mid-sized screens */
+    gap: 15px;
+  }
+
+  .card {
+    /* Optional: Adjust card height or margins if needed */
+  }
+
+  .card-text {
+    font-size: 0.95rem; /* Slightly smaller text */
+  }
+
+  .card-date {
+    font-size: 0.75rem; /* Reduce date font size slightly */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    gap: 15px;
+  }
+
+  .card-text {
+    font-size: 0.9rem; /* Decrease text size */
+  }
+
+  .card-date {
+    font-size: 0.7rem; /* Smaller date font */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+    gap: 10px;
+  }
+
+  .card {
+    /* Optional: Adjust card height or margins */
+  }
+
+  .card-date {
+    font-size: 0.7rem; /* Smaller date font */
+  }
+
+  .card-text {
+    font-size: 0.85rem; /* Adjust text size for readability */
+  }
+}

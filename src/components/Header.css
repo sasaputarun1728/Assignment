@@ -1,0 +1,21 @@
+/* Reset styles for body and html to remove extra margin/padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 0 10px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0; /* Ensure no margin around the header */
+}
+
+.logo {
+  margin-right: auto; /* Adjust alignment */
+  max-width: 100%;
+  height: auto;
+  margin-left: 0;
+}

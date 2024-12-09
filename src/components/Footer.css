@@ -1,0 +1,224 @@
+.footer-container {
+  background-color: #084c61;
+  color: #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#imageCard {
+  margin-top: 35px;
+}
+
+#imageCard1 {
+  margin-top: 35px;
+  height: 53px;
+  width: 40px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Allow items to wrap when there's not enough space */
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #0a6171;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  justify-content: flex-start;
+  width: 30%;
+  box-sizing: border-box; /* Prevent overflow */
+  min-width: 250px; /* Prevent cards from shrinking too much */
+}
+
+.contact-title {
+  margin-bottom: 200px;
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.contact-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-left: -106px;
+  margin-top: 70px;
+  text-align: left;
+}
+
+.contact-icon {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.company-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 150px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1400px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.logo1 {
+  width: 350px;
+  height: 100px;
+}
+
+.company-text-container {
+  max-width: 400px;
+  text-align: left;
+}
+
+.company-text {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.footer-address {
+  margin-right: 950px;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.address {
+  font-size: 14px;
+  color: #dcdcdc;
+  margin-top: 10px;
+}
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .company-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .logo {
+    width: 280px;  /* Adjust the logo width for smaller screens */
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .company-text-container {
+    max-width: 350px;
+    text-align: center;
+  }
+
+  .footer-address {
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 0;  /* Adjust for smaller screen space */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .company-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .logo {
+    width: 250px; /* Reduce logo size for mobile */
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .company-text-container {
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .footer-address {
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 0; /* Ensure footer address centers correctly */
+  }
+
+  .address {
+    font-size: 12px; /* Reduce font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 30px 15px; /* Adjust padding for small mobile screens */
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .company-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 200px; /* Smaller logo size for very small screens */
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .company-text-container {
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .footer-address {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .address {
+    font-size: 10px; /* Further reduce font size */
+  }
+}

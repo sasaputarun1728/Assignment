@@ -1,0 +1,83 @@
+/* Blog.css */
+.header {
+  position: relative;
+  height: 200px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+.header-text {
+  z-index: 1;
+  width: 90%;
+}
+
+.header-text h2 {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.header-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .header {
+    height: 180px;
+    margin-top: 60px; 
+  }
+
+  .header-text h2 {
+    font-size: 22px;
+  }
+
+  .header-text h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 150px;
+    margin-top: 70px; 
+  }
+
+  .header-text {
+    width: 85%;
+  }
+
+  .header-text h2 {
+    font-size: 20px;
+  }
+
+  .header-text h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 120px;
+    margin-top: 280px; 
+  }
+
+  .header-text {
+    width: 90%;
+  }
+
+  .header-text h2 {
+    font-size: 16px;
+  }
+
+  .header-text h1 {
+    font-size: 28px;
+  }
+}
